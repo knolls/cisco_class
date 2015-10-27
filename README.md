@@ -1,5 +1,12 @@
-Cdp_Crawler will crawl all the device build objects that contain info about the crawled device then returns a list of these objects.
+# My Class Scripts
 
-AutoShark Multi will crawl everything get the devices list,then monitor each device in its own thread. When it sees an interface with over 1000 packets (this is a place holder it would monitor errors) then it creates an acl to punt everything to the cpu and starts an etheranylizer. Its not very useful Multi spanner does a better job.
 
-Multispanner will crawl everything get the devices list, then monitor each device in its own thread. When it sees an interface with over 1000 packets (this is a place holder it would monitor errors) then it will create an erspan session on that port for x amount of time. when the timer ends it will clean up the erspan session and continue to monitor the device
+###Cdp_Crawler
+this will crawl all the device build objects that contain info about the crawled device then returns a list of these objects. Use this as a base to gather all the devices and do something with them. Both scripts below use Cdp_Crawler.
+
+###AutoShark Multi
+AutoShark Multiwill crawl everything get the devices list,then monitor each device in its own thread. When it sees an interface with over 1000 packets (this is a place holder it would monitor errors) then it creates an acl to punt everything to the cpu and starts an etheranylizer. Its not very useful Multi spanner does a better job.
+
+###Multispanner
+
+Multispannerwill crawl everything get the devices list, then monitor each device in its own thread. When it sees an interface with over 1000 packets (this is a place holder it would monitor errors) then it will create an erspan session on that port for x amount of time. when the timer ends it will clean up the erspan session and continue to monitor the device
