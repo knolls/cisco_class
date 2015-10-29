@@ -13,7 +13,8 @@ AutoShark Multiwill crawl everything get the devices list,then monitor each devi
 
 ###Multi Spanner
 
-Multi Spanner will crawl everything get the devices list, then monitor each device in its own thread. When it sees an interface with over 1000 packets (this is a place holder it would monitor errors) then it will create an erspan session on that port for x amount of time. when the timer ends it will clean up the erspan session and continue to monitor the device
+Multi Spanner will crawl everything get the devices list, then monitor each device in its own thread. When it sees an interface with over 1000 packets (this is a place holder it would monitor errors) then it will create an erspan session on that port for x amount of time. when the timer ends it will clean up the erspan session and continue to monitor the device.
+
 ![span output](http://i.imgur.com/o07GepF.png "span output")
 
 #APIC Scripts
