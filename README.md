@@ -18,4 +18,5 @@ Multi Spanner will crawl everything get the devices list, then monitor each devi
 APIC_Faults finds all the faults on the APIC, and scans all the interfaces for port resets over 3, and egress packet drops. It then prints them all on the screen. Screen Shot is below of the output:
 
 ![APIC_Faults output](http://i.imgur.com/JyDjJGH.png "APIC_Faults output")
+**There are no egress packet drops on the switch so they are not displayed in the above screen shot.
 
