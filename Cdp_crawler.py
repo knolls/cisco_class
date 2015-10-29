@@ -152,12 +152,14 @@ def main():
 	seed = "172.31.217.136"
 	username = "admin"
 	password = "cisco123"
-	devices_Crawled = info_crawl(seed,username,password)	
-	for d in devices_Crawled:
-		for vrf in d.vrfList:
-			print vrf.name,d.hostname
-			for route in vrf.prefixList:
-				print "\t",route
+	devices_Crawled = info_crawl(seed,username,password)
+	
+	# Example how to call to print routes in each vrf per device
+	# for d in devices_Crawled:
+	# 	for vrf in d.vrfList:
+	# 		print vrf.name,d.hostname
+	# 		for route in vrf.prefixList:
+	# 			print "\t",route
 
 if __name__ == '__main__':
 	main()
