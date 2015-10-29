@@ -10,3 +10,9 @@ AutoShark Multiwill crawl everything get the devices list,then monitor each devi
 ###Multi Spanner
 
 Multi Spanner will crawl everything get the devices list, then monitor each device in its own thread. When it sees an interface with over 1000 packets (this is a place holder it would monitor errors) then it will create an erspan session on that port for x amount of time. when the timer ends it will clean up the erspan session and continue to monitor the device
+
+#APIC Scrips
+
+###APIC_Faults
+
+APIC_Faults finds all the faults on the APIC, and scans all the interfaces for port resets over 3, and egress packet drops. It then prints them all on the screen.
